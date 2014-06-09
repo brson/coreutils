@@ -39,6 +39,7 @@ extern crate seq;
 extern crate sleep;
 extern crate sum;
 extern crate tac;
+extern crate tail;
 extern crate tee;
 extern crate touch;
 extern crate tr;
@@ -92,6 +93,7 @@ fn util_map() -> HashMap<&str, fn(Vec<String>) -> int> {
     map.insert("sleep", sleep::uumain);
     map.insert("sum", sum::uumain);
     map.insert("tac", tac::uumain);
+    map.insert("tail", tail::uumain);
     map.insert("tee", tee::uumain);
     map.insert("touch", touch::uumain);
     map.insert("tr", tr::uumain);
